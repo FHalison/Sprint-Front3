@@ -113,7 +113,7 @@ Foram utilizados recursos do Tailwind CSS para adaptação da interface.
 
 Repositório do projeto:
 
-https://github.com/FHalison/Sprint-Front
+https://github.com/FHalison/Sprint-Front3
 
 ## Contato
 
