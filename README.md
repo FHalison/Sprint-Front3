@@ -1,75 +1,126 @@
-# React + TypeScript + Vite
+# SoulUp Mobility
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição do Projeto
 
-Currently, two official plugins are available:
+O SoulUp Mobility é uma solução digital desenvolvida para incentivar hábitos sustentáveis por meio de pontos, recompensas e acompanhamento de impacto ambiental.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A plataforma foi criada com foco em acessibilidade, praticidade e sustentabilidade, oferecendo uma interface moderna, intuitiva e responsiva para diferentes dispositivos.
 
-## React Compiler
+## Objetivo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O objetivo do projeto é transformar ações sustentáveis em benefícios, incentivando o usuário a adotar hábitos mais conscientes no dia a dia.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Página inicial responsiva
+- Dashboard do usuário
+- Sistema de pontos
+- Conversão de pontos em benefícios
+- Área de resgate
+- FAQ interativo
+- Formulário de contato com validação
+- Página de integrantes
+- Rotas dinâmicas para os integrantes
+- Acompanhamento de impacto ambiental
+- Navegação SPA com React Router
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tecnologias Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- React Router DOM
+- React Hook Form
+- Git
+- GitHub
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Estrutura do Projeto
 
+```text
+src/
+├── assets/
+├── components/
+│   ├── Card.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   └── Layout.tsx
+├── pages/
+│   ├── Contato.tsx
+│   ├── Dashboard.tsx
+│   ├── FAQ.tsx
+│   ├── Home.tsx
+│   ├── IntegranteDetalhe.tsx
+│   ├── Integrantes.tsx
+│   ├── Resgate.tsx
+│   ├── Sobre.tsx
+│   └── Solucao.tsx
+├── App.tsx
+├── index.css
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Como Executar
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clone ou faça o download do projeto.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Abra a pasta do projeto no terminal e instale as dependências:
 
+```bash
+npm install
 ```
+
+Depois execute o projeto:
+
+```bash
+npm run dev
+```
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+## Responsividade
+
+O projeto foi desenvolvido para funcionar em diferentes tamanhos de tela:
+
+- Mobile
+- Tablet
+- Desktop
+
+Foram utilizados recursos do Tailwind CSS para adaptação da interface.
+
+## Integrantes
+
+### Francisco Halison Marques Teixeira
+
+- RM: 573616
+- Desenvolvimento Front-End
+
+### Gustavo Santos Viana
+
+- RM: 572560
+- Desenvolvimento Front-End
+
+### Pedro Vinícius Martins Otenio
+
+- RM: 573299
+- Desenvolvimento Front-End
+
+## GitHub
+
+Repositório do projeto:
+
+https://github.com/FHalison/Sprint-Front
+
+## Contato
+
+Projeto acadêmico desenvolvido para a FIAP.
+
+Em caso de dúvidas, utilize a página de contato disponível na aplicação.
+
+## Sobre o Projeto
+
+O SoulUp Mobility busca unir tecnologia e sustentabilidade, utilizando recursos digitais para incentivar comportamentos positivos e gerar benefícios para os usuários.
